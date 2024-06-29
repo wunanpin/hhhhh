@@ -1,13 +1,12 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import HeaderNavigation from '../components/Nav.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import HeaderNavigation from "../components/Nav.astro";
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
 		<svg
-		
 			class="astro-a"
 			width="495"
 			height="623"
@@ -34,13 +33,34 @@ import HeaderNavigation from '../components/Nav.astro';
 					<stop offset="1" stop-opacity="0.2"></stop>
 				</linearGradient>
 			</defs>
-
-	
 		</svg>
-		<HeaderNavigation/>
-		
+		<HeaderNavigation />
+
 		<h1 class="text-gradient">春季养肝</h1>
-		<p class="rich-旅游资源">春季，万物复苏，气候温和，是大自然赋予我们养生的最佳时机。在这个季节里，我们应当特别关注肝脏的养护，因为肝脏在中医理论中与春季相对应，是调节身体机能和情绪的重要器官。</p>
+
+		<ul>
+			<li><a href="/md/养肝食谱">养肝食谱</a></li>
+		</ul>
+
+		<style>
+			h1 {
+				font-family: "思源宋体";
+				font-weight: 800;
+				font-size: 64px;
+				line-height: 1.5;
+				color: black;
+				letter-spacing: 2px;
+				text-indent: 1em;
+				text-decoration: none;
+				text-shadow:
+					1px 1px 2px rgb(225, 81, 199),
+					0 0 1em rgb(184, 58, 71),
+					0 0 0.2em rgb(185, 55, 166);
+			}
+		</style>
+		<p class="rich-旅游资源">
+			春季，万物复苏，气候温和，是大自然赋予我们养生的最佳时机。在这个季节里，我们应当特别关注肝脏的养护，因为肝脏在中医理论中与春季相对应，是调节身体机能和情绪的重要器官。
+		</p>
 		<style>
 			.rich-旅游资源 {
 				border: 2px solid rgba(156, 117, 141, 0.687); /* 设置边框为绿色且宽度为2px */
@@ -49,73 +69,94 @@ import HeaderNavigation from '../components/Nav.astro';
 				border-radius: 5px; /* 为边框添加圆角 */
 			}
 		</style>
-		<p class="instructions">
-		
-		
+
 		<ul role="list" class="link-card-grid">
 			<Card
-				href="https://docs.astro.build/"
+				href="https://jiankang.cctv.com/2023/04/24/ARTITEmo2HPksGVLOpwZbZ7i230424.shtml/"
 				title="饮食调整"
 				body="春季应选择清淡、富含营养的食物，多吃绿叶蔬菜和水果，适量食用温补食物"
 			/>
 			<Card
-				href="https://astro.build/integrations/"
+				href="https://www.sport.gov.cn/n20001280/n20745751/n20767239/c21598103/content.html/"
 				title="情绪与运动"
 				body="保持心情舒畅，避免情绪波动，进行适量的户外活动，以促进血液循环和肝脏功能。"
 			/>
 			<Card
-				href="https://astro.build/themes/"
+				href="https://www.thepaper.cn/newsDetail_forward_26771506/"
 				title="睡眠与休息"
 				body="保证充足的睡眠，特别是夜间11点至凌晨3点的高质量睡眠，避免过度劳累和长时间熬夜。"
 			/>
 			<Card
-				href="https://astro.build/chat/"
+				href="https://www.thepaper.cn/newsDetail_forward_26771506/"
 				title="生活习惯与中医调理"
 				body="控制饮酒量，避免不必要的药物使用，根据个人体质选择中医调理方法。 ❤️"
 			/>
 
+			<p>
+				饮食调整：
+				春季饮食应以清淡为主，避免重口味和刺激性食物，减少肝脏的负担。增加富含膳食纤维的食物，
+				如全谷物、豆类，促进肠道健康，帮助肝脏排毒。适量摄入富含Omega-3脂肪酸的食物，如深海鱼类，
+				有助于改善肝脏健康。选择温和的食物，如生姜、大蒜，它们有助于促进肝脏的血液循环。
+			</p>
+			<img
+				src="https://tse4-mm.cn.bing.net/th/id/OIP-C.OOuGu618apSvKStMlyB1wgHaE8?rs=1&pid=ImgDetMain"
+				alt="100"
+				width="380"
+				height="auto"
+			/>
 
-<p>饮食调整：
-    春季饮食应以清淡为主，避免重口味和刺激性食物，减少肝脏的负担。增加富含膳食纤维的食物，
-	如全谷物、豆类，促进肠道健康，帮助肝脏排毒。适量摄入富含Omega-3脂肪酸的食物，如深海鱼类，
-	有助于改善肝脏健康。选择温和的食物，如生姜、大蒜，它们有助于促进肝脏的血液循环。
-</p>
-<img src="https://tse4-mm.cn.bing.net/th/id/OIP-C.OOuGu618apSvKStMlyB1wgHaE8?rs=1&pid=ImgDetMain" alt="100"width="380" height="auto">
 
 
-<p>情绪与运动：
-	春季是肝气生发的季节，应通过各种方式来调节情绪，如参加社交活动、培养兴趣爱好等。
-	运动不仅有助于身体健康，还能提升心情，减少压力，如进行轻松的散步、瑜伽或舞蹈。
-	学习放松技巧，如冥想、深呼吸，有助于缓解紧张情绪，促进肝脏的疏泄功能。
-</p>
-<img src="https://img95.699pic.com/photo/50176/6359.jpg_wh300.jpg!/fh/300/quality/90" alt="100" width="380" height="auto">
- 
-<p>睡眠与休息：
-	春季，是调整睡眠习惯以适应自然界阳气生发的重要时期。要获得高质量的睡眠，
-	应遵循夜卧早起的原则，保证充足的睡眠时间，同时避免熬夜。睡前进行放松活动，
-	如冥想和轻柔拉伸，有助于缓解一天的疲劳。保持睡眠环境安静温馨，避免强光和噪音干扰，
-	要建立固定的睡前仪式，如热水泡脚或听轻音乐，有助于身心放松，准备进入睡眠状态。
-   适度的午休可以帮助恢复精力，但不宜过长，以免影响夜间睡眠。春季睡眠养生的目的是与自然界的节律同步，通过合理的生活习惯和环境调整，达到身心和谐与健康。
-</p>
-<img src="https://ts1.cn.mm.bing.net/th/id/R-C.58f3aecd9caee6ad27494be60047c489?rik=caw1pMsGOFrvMQ&riu=http%3a%2f%2fwww.ygrk.
-		com%2fstatic%2fupload%2fimage%2f20220402%2f1648867879261217.
-		jpg&ehk=%2bvOydh5TOjjh8ZsRlWWkI%2brI92Q9OSVT1WIWN%2b72wSE%3d&risl=&pid=ImgRaw&r=0" alt="100" width="380" height="auto">			
+			<p>
+				情绪与运动：
+				春季是肝气生发的季节，应通过各种方式来调节情绪，如参加社交活动、培养兴趣爱好等。
+				运动不仅有助于身体健康，还能提升心情，减少压力，如进行轻松的散步、瑜伽或舞蹈。
+				学习放松技巧，如冥想、深呼吸，有助于缓解紧张情绪，促进肝脏的疏泄功能。
+			</p>
+			<img
+				src="https://img95.699pic.com/photo/50176/6359.jpg_wh300.jpg!/fh/300/quality/90"
+				alt="100"width="380"height="auto"/>
 			
-<p>生活习惯和中医调理：
-		春季宜穿着宽松衣物，以利于气血流通，避免束缚身体，影响阳气的舒展。
-		中医调理方面，《黄帝内经》提倡春季应顺应肝木之气，通过食疗和草药辅助调理。
-		食疗上，推荐食用清淡、富含营养的食物，如绿叶蔬菜、豆类和富含Omega-3的深海鱼类，以滋养肝脏、促进健康。
-		草药调理则可根据个人体质，选用具有疏肝解郁、养血柔肝作用的草药，如柴胡、白芍等。
-		此外，春季也适宜进行针灸、拔罐等传统中医疗法，以帮助疏通经络，平衡身体内外环境，促进整体健康。
-		通过这些中医调理方法，可以有效地增强体质，预防春季常见的疾病。	
-</p>
-<img src="https://bpic.588ku.com/back_origin_min_pic/19/10/22/ad41a9cc4a9cddfbae96f026c980c622.jpg" alt="100" width="300" height="400">	
+				
 
-<img src="https://bpic.588ku.com/back_origin_min_pic/19/10/22/4a760f73d07dd0e25a17430847f3bee0.jpg!/fw/750/quality/99/unsharp/true/compress/true7" alt="">		
-						
+			<p>
+				睡眠与休息：
+				春季，是调整睡眠习惯以适应自然界阳气生发的重要时期。要获得高质量的睡眠，
+				应遵循夜卧早起的原则，保证充足的睡眠时间，同时避免熬夜。睡前进行放松活动，
+				如冥想和轻柔拉伸，有助于缓解一天的疲劳。保持睡眠环境安静温馨，避免强光和噪音干扰，
+				要建立固定的睡前仪式，如热水泡脚或听轻音乐，有助于身心放松，准备进入睡眠状态。
+				适度的午休可以帮助恢复精力，但不宜过长，以免影响夜间睡眠。春季睡眠养生的目的是与自然界的节律同步，通过合理的生活习惯和环境调整，达到身心和谐与健康。
+			</p>
+			<img
+				src="https://ts1.cn.mm.bing.net/th/id/R-C.c9faafc61f549aa71ee0e097a9748474?rik=DNzH%2fAzfykOZhg&riu=http%3a%2f%2fwww.tcm360.com%2fuppic%2fimage%2f20171129%2f201711291450198384.jpg&ehk=iOLEzIFPpLgznGwoMK0Gjh1n2nJ3iTQZl4ZhycrBgRI%3d&risl=&pid=ImgRaw&r=0"
+				alt="100"
+				width="380"
+				height="500"
+			/>
+
+			<p>
+				生活习惯和中医调理：
+				春季宜穿着宽松衣物，以利于气血流通，避免束缚身体，影响阳气的舒展。
+				中医调理方面，《黄帝内经》提倡春季应顺应肝木之气，通过食疗和草药辅助调理。
+				食疗上，推荐食用清淡、富含营养的食物，如绿叶蔬菜、豆类和富含Omega-3的深海鱼类，以滋养肝脏、促进健康。
+				草药调理则可根据个人体质，选用具有疏肝解郁、养血柔肝作用的草药，如柴胡、白芍等。
+				此外，春季也适宜进行针灸、拔罐等传统中医疗法，以帮助疏通经络，平衡身体内外环境，促进整体健康。
+				通过这些中医调理方法，可以有效地增强体质，预防春季常见的疾病。
+			</p>
+			<img
+				src="https://img.zcool.cn/community/01e6cd5dae6482a801209e1fe252f1.jpg@1280w_1l_2o_100sh.jpg"
+				alt="100"
+				width="380"
+				height="500"
+			/>
+			<p>
+				<a href="https://m.thepaper.cn/baijiahao_7278473"
+					>四季养生有门道之春夏养生</a>
+			</p>
 		</ul>
 	</main>
 </Layout>
+
 
 <style>
 	main {
@@ -153,7 +194,10 @@ import HeaderNavigation from '../components/Nav.astro';
 	.instructions {
 		margin-bottom: 2rem;
 		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
+		background: linear-gradient(
+			rgba(var(--accent-dark), 66%),
+			rgba(var(--accent-dark), 33%)
+		);
 		padding: 1.5rem;
 		border-radius: 8px;
 	}
@@ -175,15 +219,12 @@ import HeaderNavigation from '../components/Nav.astro';
 		padding: 0;
 	}
 	h1.text-gradient {
-    color: rgb(252, 251, 248); /* 直接设置文本颜色 */
-    background-image: none; /* 移除背景图像 */
-    -webkit-background-clip: unset; /* 取消文本背景裁剪 */
-    -webkit-text-fill-color: unset; /* 取消透明文本填充 */
-}
-body {
-    background-color: #edd8e9; /* 黄色的十六进制颜色值 */
-}
-
+		color: rgb(252, 251, 248); /* 直接设置文本颜色 */
+		background-image: none; /* 移除背景图像 */
+		-webkit-background-clip: unset; /* 取消文本背景裁剪 */
+		-webkit-text-fill-color: unset; /* 取消透明文本填充 */
+	}
+	body {
+		background-color: #edd8e9; /* 黄色的十六进制颜色值 */
+	}
 </style>
-
-
