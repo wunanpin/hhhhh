@@ -1,7 +1,7 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import HeaderNavigation from '../components/Nav.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import HeaderNavigation from "../components/Nav.astro";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -34,103 +34,117 @@ import HeaderNavigation from '../components/Nav.astro';
 				</linearGradient>
 			</defs>
 		</svg>
-        <HeaderNavigation/>
-        
+		<HeaderNavigation />
 
 		<h1 class="text-gradient">冬季养肾</h1>
-		<p class="instructions">
-		丽江的历史文化可以追溯到远古时期，但真正形成独特文化特色，是在纳西族的长期发展中逐渐形成的。
-		<p>
-			P211012422 蒋丕彦
+		<p class="rich-旅游资源">
+			春季，万物复苏，气候温和，是大自然赋予我们养生的最佳时机。在这个季节里，我们应当特别关注肝脏的养护，因为肝脏在中医理论中与春季相对应，是调节身体机能和情绪的重要器官。
 		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="历史沿革与地缘政治"
-				body="丽江的历史文化可以追溯到远古时期，但真正形成独特文化特色，是在纳西族的长期发展中逐渐形成的。"
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="民族文化与东巴文化"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="古城建筑与艺术遗产"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="丽江名人录"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
-	</main>
-</Layout>
+		<style>
+			.rich-旅游资源 {
+				border: 2px solid rgba(156, 117, 141, 0.687); /* 设置边框为绿色且宽度为2px */
+				background-color: rgb(211, 147, 176); /* 设置背景颜色为浅绿色 */
+				padding: 10px; /* 为文本添加一些内边距 */
+				border-radius: 5px; /* 为边框添加圆角 */
+			}
+		</style>
 
-<style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
-	.astro-a {
-		position: absolute;
-		top: -32px;
-		left: 50%;
-		transform: translatex(-50%);
-		width: 220px;
-		height: auto;
-		z-index: -1;
-	}
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		margin-bottom: 2rem;
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
-		padding: 1.5rem;
-		border-radius: 8px;
-	}
-	.instructions code {
-		font-size: 0.8em;
-		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-light));
-		border-radius: 4px;
-		padding: 0.3em 0.4em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent-light));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
-	}h1.text-gradient {
-    color: rgb(73, 173, 186); /* 直接设置文本颜色 */
-    background-image: none; /* 移除背景图像 */
-    -webkit-background-clip: unset; /* 取消文本背景裁剪 */
-    -webkit-text-fill-color: unset; /* 取消透明文本填充 */
-}
-body {
-    background-color: #7fc8d8; /* 黄色的十六进制颜色值 */
-}
-</style>
+		<p class="instructions">
+			丽江的历史文化可以追溯到远古时期，但真正形成独特文化特色，是在纳西族的长期发展中逐渐形成的。
+			<p>P211012422 蒋丕彦</p>
+			<ul role="list" class="link-card-grid">
+				<Card
+					href="https://docs.astro.build/"
+					title="历史沿革与地缘政治"
+					body="丽江的历史文化可以追溯到远古时期，但真正形成独特文化特色，是在纳西族的长期发展中逐渐形成的。"
+				/>
+				<Card
+					href="https://astro.build/integrations/"
+					title="民族文化与东巴文化"
+					body="Supercharge your project with new frameworks and libraries."
+				/>
+				<Card
+					href="https://astro.build/themes/"
+					title="古城建筑与艺术遗产"
+					body="Explore a galaxy of community-built starter themes."
+				/>
+				<Card
+					href="https://astro.build/chat/"
+					title="丽江名人录"
+					body="Come say hi to our amazing Discord community. ❤️"
+				/>
+			</ul>
+		</p>
+	</main>
+
+	<style>
+		main {
+			margin: auto;
+			padding: 1rem;
+			width: 800px;
+			max-width: calc(100% - 2rem);
+			color: white;
+			font-size: 20px;
+			line-height: 1.6;
+		}
+		.astro-a {
+			position: absolute;
+			top: -32px;
+			left: 50%;
+			transform: translatex(-50%);
+			width: 220px;
+			height: auto;
+			z-index: -1;
+		}
+		h1 {
+			font-size: 4rem;
+			font-weight: 700;
+			line-height: 1;
+			text-align: center;
+			margin-bottom: 1em;
+		}
+		.text-gradient {
+			background-image: var(--accent-gradient);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-size: 400%;
+			background-position: 0%;
+		}
+		.instructions {
+			margin-bottom: 2rem;
+			border: 1px solid rgba(var(--accent-light), 25%);
+			background: linear-gradient(
+				rgba(var(--accent-dark), 66%),
+				rgba(var(--accent-dark), 33%)
+			);
+			padding: 1.5rem;
+			border-radius: 8px;
+		}
+		.instructions code {
+			font-size: 0.8em;
+			font-weight: bold;
+			background: rgba(var(--accent-light), 12%);
+			color: rgb(var(--accent-light));
+			border-radius: 4px;
+			padding: 0.3em 0.4em;
+		}
+		.instructions strong {
+			color: rgb(var(--accent-light));
+		}
+		.link-card-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+			gap: 2rem;
+			padding: 0;
+		}
+		h1.text-gradient {
+			color: rgb(73, 173, 186); /* 直接设置文本颜色 */
+			background-image: none; /* 移除背景图像 */
+			-webkit-background-clip: unset; /* 取消文本背景裁剪 */
+			-webkit-text-fill-color: unset; /* 取消透明文本填充 */
+		}
+		body {
+			background-color: #7fc8d8; /* 黄色的十六进制颜色值 */
+		}
+	</style>
+</Layout>
