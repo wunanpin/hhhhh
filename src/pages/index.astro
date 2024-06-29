@@ -36,46 +36,36 @@ import HeaderNavigation from '../components/Nav.astro';
 		</svg>
 		<HeaderNavigation/>
 		
-		<h1>《黄帝内经》 <span class="text-gradient">四季养生</span></h1>
-
-
 		
-		<p class="instructions">
-		
-		</p>
-		<p>P211012422 蒋丕彦</p>
+		<h1 class="text-gradient"> 《黄帝内经》四季养生</h1>
 
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
+		<p>P211012422 蒋丕彦     P211012436龙媛</p>
+
+		<img
+src="https://tse3-mm.cn.bing.net/th/id/OIP-C.1MuiPqvRY0CHZlmShDHVewAAAA?rs=1&pid=ImgDetMain"
+		alt="100"width="900"height="500"/>
+			<p>春三月，此为发陈。天地俱生，万物以荣，夜卧早起，广步于庭，被发缓形，以使志生，生而勿杀，予而勿夺，赏而勿罚，此春气之应，养生之道也；逆之则伤肝，夏为实寒变，奉长者少。</p>
+				<p>夏三月，此为蕃秀。天地气交，万物华实，夜卧早起，无厌于日，使志勿怒，使华英成秀，使气得泄，若所爱在外，此夏气之应，养长之道也；逆之则伤心，秋为痎疟，奉收者少，冬至重病。</p>
+				<p>秋三月，此谓容平。天气以急，地气以明，早卧早起，与鸡俱兴，使志安宁，以缓秋刑，收敛神气，使秋气平，无外其志，使肺气清，此秋气之应，养收之道也；逆之则伤肺，冬为飧泄，奉藏者少。</p>
+				<p>冬三月，此为闭藏。水冰地坼，勿扰乎阳，早卧晚起，必待日光，使志若伏若匿，若有私意，若已有得，去寒就温，无泄皮肤，使气极夺。此冬气之应，养藏之道也；逆之则伤肾，春为痿厥，奉生者少。</p>
+				<style>
+					/* 其他现有样式 */
+					p {
+						font-size: 17px;
+					}
+					/* 其他样式 */
+				</style>
 		</ul>
 	</main>
 </Layout>
+
 <style>
 	main {
 		margin: auto;
 		padding: 1rem;
 		width: 800px;
 		max-width: calc(100% - 2rem);
-		color:red;
+		color:rgb(69, 41, 41);
 		font-size: 20px;
 		line-height: 1.6;
 	}
@@ -126,11 +116,13 @@ import HeaderNavigation from '../components/Nav.astro';
 		gap: 2rem;
 		padding: 0;
 	}
-	
-
-	
-
-
-
-
+	h1.text-gradient {
+		color: rgb(242, 245, 243); /* 直接设置文本颜色 */
+		background-image: none; /* 移除背景图像 */
+		-webkit-background-clip: unset; /* 取消文本背景裁剪 */
+		-webkit-text-fill-color: unset; /* 取消透明文本填充 */
+	}
+	body {
+		background-color: #efdeefe0; /* 黄色的十六进制颜色值 */
+	}
 </style>
