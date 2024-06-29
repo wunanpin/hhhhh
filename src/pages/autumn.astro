@@ -36,22 +36,42 @@ import HeaderNavigation from '../components/Nav.astro';
 		</svg>
         <HeaderNavigation/>
         
-
-		<h1 class="text-gradient">丽江悠久的历史文化</h1>
-		<p class="instructions">
-		丽江的历史文化可以追溯到远古时期，但真正形成独特文化特色，是在纳西族的长期发展中逐渐形成的。
+        <ul>
+            <li><a href="/md/gucheng">gucheng</a></li>
+            <li><a href="/md/xueshan">xueshan</a></li>
+        </ul>
+		<h1 class="text-gradient">秋季养肺</h1>
+		<p class="rich-旅游资源">春季，万物复苏，气候温和，是大自然赋予我们养生的最佳时机。在这个季节里，我们应当特别关注肝脏的养护，因为肝脏在中医理论中与春季相对应，是调节身体机能和情绪的重要器官。</p>
+		<style>
+			.rich-旅游资源 {
+				border: 2px solid rgba(132, 200, 210, 0.687); /* 设置边框为绿色且宽度为2px */
+				background-color: rgb(91, 158, 134); /* 设置背景颜色为浅绿色 */
+				padding: 10px; /* 为文本添加一些内边距 */
+				border-radius: 5px; /* 为边框添加圆角 */
+			}
+		</style>
+		
+		<p class="rich-旅游资源">丽江旅游资源非常丰富</p>
+		<style>
+			.rich-旅游资源 {
+				border: 2px solid rgb(173, 183, 173); /* 设置边框为绿色且宽度为2px */
+				background-color: rgb(39, 89, 131); /* 设置背景颜色为浅绿色 */
+				padding: 10px; /* 为文本添加一些内边距 */
+				border-radius: 5px; /* 为边框添加圆角 */
+			}
+		</style>
 		<p>
 			P211012422 蒋丕彦
 		</p>
 		<ul role="list" class="link-card-grid">
 			<Card
 				href="https://docs.astro.build/"
-				title="历史沿革与地缘政治"
-				body="丽江的历史文化可以追溯到远古时期，但真正形成独特文化特色，是在纳西族的长期发展中逐渐形成的。"
+				title="雪山和古城"
+				body="丽江玉龙雪山。"
 			/>
 			<Card
 				href="https://astro.build/integrations/"
-				title="民族文化与东巴文化"
+				title="雪山文化"
 				body="Supercharge your project with new frameworks and libraries."
 			/>
 			<Card
@@ -125,4 +145,13 @@ import HeaderNavigation from '../components/Nav.astro';
 		gap: 2rem;
 		padding: 0;
 	}
+	h1.text-gradient {
+    color: rgb(243, 241, 237); /* 直接设置文本颜色 */
+    background-image: none; /* 移除背景图像 */
+    -webkit-background-clip: unset; /* 取消文本背景裁剪 */
+    -webkit-text-fill-color: unset; /* 取消透明文本填充 */
+}
+body {
+    background-color: #a2a26e; /* 黄色的十六进制颜色值 */
+}
 </style>
